@@ -1,0 +1,31 @@
+{
+  "name": "es6-string-lua",
+  "displayName": "es6-strings-lua",
+  "description": "Syntax highlight for Lua strings in ES6",
+  "version": "0.1.0",
+  "publisher": "xch91",
+  "icon": "docs/logo.png",
+  "repository": {
+    "url": "https://github.com/xch91/vscode-es6-lua-string"
+  },
+  "engines": {
+    "vscode": "^1.32.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "grammars": [
+      {
+        "path": "./syntaxes/es6-inline-lua.json",
+        "scopeName": "es6-lua.injection",
+        "injectTo": [
+          "source.js"
+        ],
+        "embeddedLanguages": {
+          "meta.embedded.block.lua": "lua"
+        }
+      }
+    ]
+  }
+}

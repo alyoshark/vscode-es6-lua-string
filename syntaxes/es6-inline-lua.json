@@ -1,0 +1,18 @@
+{
+  "fileTypes": ["js"],
+  "injectionSelector": "L:source.js -comment -string",
+  "patterns": [
+    {
+      "begin": "(.?(lua))(`)",
+      "end": "(`)",
+      "beginCaptures": {
+        "1": { "name": "variable.parameter" }
+      },
+      "patterns": [
+        { "include": "source.ts#template-substitution-element" },
+        { "include": "source.lua" }
+      ]
+    }
+  ],
+  "scopeName": "es6-lua.injection"
+}
