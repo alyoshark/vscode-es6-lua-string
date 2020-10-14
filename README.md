@@ -4,7 +4,8 @@ Syntax highlight for Lua snippets in ES6 template literals
 
 ## Installation
 
-- TODO
+- `docker run --rm -itv $PWD:/app -w /app node:12.14-buster-slim npx vsce package`
+- Inside VS Code command palette: `Install from VSIX` and install the compiled vsix file
 
 ## Requirements
 
